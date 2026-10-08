@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
-const MODEL = process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
+const MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-20b";
 const SYSTEM_PROMPT =
   process.env.SYSTEM_PROMPT || "You are a helpful, concise assistant.";
 const MAX_MESSAGES = 30;
